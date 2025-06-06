@@ -1,0 +1,101 @@
+# Nmap 7.95 scan initiated Fri Jun  6 08:40:51 2025 as: /usr/lib/nmap/nmap --privileged -sV -oN scan_output.txt 192.168.29.0/24
+Nmap scan report for reliance.reliance (192.168.29.1)
+Host is up (0.0039s latency).
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE             VERSION
+80/tcp   open   http                lighttpd
+443/tcp  open   ssl/http            lighttpd
+1900/tcp open   upnp
+2869/tcp closed icslap
+7443/tcp open   ssl/oracleas-https?
+8002/tcp closed teradataordbms
+8080/tcp open   http-proxy          JCOW407/JUICEJFV-1.3.31
+8200/tcp closed trivnet1
+8443/tcp open   ssl/https-alt       JCOW407/JUICEJFV-1.3.31
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1900-TCP:V=7.95%I=7%D=6/6%Time=6842E1E7%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,C9,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20Linux\x20UPn
+SF:P/1\.0\x20DLNADOC/1\.50\x20AccessTwine/1\.0-RAS\x20Device/reliance\.rel
+SF:iance\r\nContent-Length:\x2048\r\nContent-Type:\x20text/html\r\n\r\n<HT
+SF:ML><BODY><H1>404\x20Not\x20Found</H1></BODY></HTML>")%r(HTTPOptions,DB,
+SF:"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nServer:\x20Linux\x20UP
+SF:nP/1\.0\x20DLNADOC/1\.50\x20AccessTwine/1\.0-RAS\x20Device/reliance\.re
+SF:liance\r\nContent-Length:\x2057\r\nContent-Type:\x20text/html\r\n\r\n<H
+SF:TML><BODY><H1>405\x20Method\x20Not\x20Allowed</H1></BODY></HTML>")%r(Fo
+SF:urOhFourRequest,C9,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20Linu
+SF:x\x20UPnP/1\.0\x20DLNADOC/1\.50\x20AccessTwine/1\.0-RAS\x20Device/relia
+SF:nce\.reliance\r\nContent-Length:\x2048\r\nContent-Type:\x20text/html\r\
+SF:n\r\n<HTML><BODY><H1>404\x20Not\x20Found</H1></BODY></HTML>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7443-TCP:V=7.95%T=SSL%I=7%D=6/6%Time=6842E1EF%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,98,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nContent
+SF:-Length:\x2019\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\
+SF:nServer:\x20JCOW407/JUICEJFV-1\.3\.31\r\n\r\nService\x20Unavailable")%r
+SF:(HTTPOptions,90,"HTTP/1\.0\x20501\x20Not\x20Implemented\r\nContent-Leng
+SF:th:\x2015\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nServ
+SF:er:\x20JCOW407/JUICEJFV-1\.3\.31\r\n\r\nNot\x20implemented")%r(FourOhFo
+SF:urRequest,88,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x20
+SF:11\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nServer:\x20
+SF:JCOW407/JUICEJFV-1\.3\.31\r\n\r\nBad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.95%I=7%D=6/6%Time=6842E1E2%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,98,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nContent-Lengt
+SF:h:\x2019\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nServe
+SF:r:\x20JCOW407/JUICEJFV-1\.3\.31\r\n\r\nService\x20Unavailable")%r(HTTPO
+SF:ptions,90,"HTTP/1\.0\x20501\x20Not\x20Implemented\r\nContent-Length:\x2
+SF:015\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nServer:\x2
+SF:0JCOW407/JUICEJFV-1\.3\.31\r\n\r\nNot\x20implemented")%r(FourOhFourRequ
+SF:est,88,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2011\r\n
+SF:Content-Type:\x20text/html\r\nConnection:\x20close\r\nServer:\x20JCOW40
+SF:7/JUICEJFV-1\.3\.31\r\n\r\nBad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8443-TCP:V=7.95%T=SSL%I=7%D=6/6%Time=6842E1F6%P=x86_64-pc-linux-gnu
+SF:%r(HTTPOptions,90,"HTTP/1\.0\x20501\x20Not\x20Implemented\r\nContent-Le
+SF:ngth:\x2015\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nSe
+SF:rver:\x20JCOW407/JUICEJFV-1\.3\.31\r\n\r\nNot\x20implemented")%r(FourOh
+SF:FourRequest,88,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x
+SF:2011\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nServer:\x
+SF:20JCOW407/JUICEJFV-1\.3\.31\r\n\r\nBad\x20Request")%r(DNSVersionBindReq
+SF:TCP,65,"\(null\)\x20400\x20Bad\x20Request\r\nContent-Length:\x2011\r\nC
+SF:ontent-Type:\x20text/html\r\nConnection:\x20close\r\n\r\nBad\x20Request
+SF:")%r(DNSStatusRequestTCP,65,"\(null\)\x20400\x20Bad\x20Request\r\nConte
+SF:nt-Length:\x2011\r\nContent-Type:\x20text/html\r\nConnection:\x20close\
+SF:r\n\r\nBad\x20Request")%r(SMBProgNeg,65,"\(null\)\x20400\x20Bad\x20Requ
+SF:est\r\nContent-Length:\x2011\r\nContent-Type:\x20text/html\r\nConnectio
+SF:n:\x20close\r\n\r\nBad\x20Request")%r(X11Probe,65,"\(null\)\x20400\x20B
+SF:ad\x20Request\r\nContent-Length:\x2011\r\nContent-Type:\x20text/html\r\
+SF:nConnection:\x20close\r\n\r\nBad\x20Request")%r(LANDesk-RC,65,"\(null\)
+SF:\x20400\x20Bad\x20Request\r\nContent-Length:\x2011\r\nContent-Type:\x20
+SF:text/html\r\nConnection:\x20close\r\n\r\nBad\x20Request")%r(TerminalSer
+SF:ver,65,"\(null\)\x20400\x20Bad\x20Request\r\nContent-Length:\x2011\r\nC
+SF:ontent-Type:\x20text/html\r\nConnection:\x20close\r\n\r\nBad\x20Request
+SF:")%r(JavaRMI,65,"\(null\)\x20400\x20Bad\x20Request\r\nContent-Length:\x
+SF:2011\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\n\r\nBad\x
+SF:20Request");
+MAC Address: 20:89:8A:EB:8D:19 (Shenzhen Skyworth Digital  Technology)
+
+Nmap scan report for 192.168.29.5
+Host is up (0.00051s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+7070/tcp open  ssl/realserver?
+MAC Address: F8:89:D2:63:23:93 (Cloud Network Technology Singapore PTE.)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.29.37
+Host is up (0.0035s latency).
+All 1000 scanned ports on 192.168.29.37 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 5C:66:6C:8C:3B:69 (Guangdong Oppo Mobile Telecommunications)
+
+Nmap scan report for 192.168.29.178
+Host is up (0.0000060s latency).
+All 1000 scanned ports on 192.168.29.178 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun  6 08:43:22 2025 -- 256 IP addresses (4 hosts up) scanned in 150.90 seconds
